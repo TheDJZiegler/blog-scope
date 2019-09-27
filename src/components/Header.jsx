@@ -52,7 +52,7 @@ const Header = ({ children, title, date, cover }) => (
     <Img src={Logo} fluid={cover || {} || [] || ''} />
     <Text>
       <h1>Scope Blog</h1>
-
+      <h3>{date}</h3>
       {children && <Subtitle>All your <span style={{color: theme.BRAND_BLUE}}>team</span> <span style={{color: theme.RED}}>insights</span> in a single dashboard</Subtitle>}
     </Text>
   </Wrapper>
