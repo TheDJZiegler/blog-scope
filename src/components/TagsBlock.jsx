@@ -3,21 +3,24 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
+import * as theme from '../theme'
+
 const TagsContainer = styled.div`
   margin: 1rem 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   a {
     margin: 0 1rem 1rem 0;
-    color: ${props => props.theme.colors.black.blue};
+    color: ${theme.DARKER_BLUE};
     padding: 0.3rem 0.6rem;
-    background: ${props => props.theme.colors.white.grey};
+    background: ${theme.BRAND_BLUE_50};
     border-radius: 10px;
     &:hover {
-      color: ${props => props.theme.colors.white.light};
-      background: ${props => props.theme.colors.primary.light};
+      color: ${theme.WHITE};
+      background: ${theme.BRAND_BLUE};
       border: ${props => props.theme.colors.primary.light};
     }
   }

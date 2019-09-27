@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
-import logo from '../../static/logo/header-logo.png';
 
 import Logo from '../../public/icons/logotipo_blanco.svg'
 
@@ -35,9 +34,7 @@ const NavBar = () => (
       <img src={Logo} width='120' alt="Scope Logo" />
     </StyledLink>
     <Nav>
-      <Link to="/">Home</Link>
-      <Link to="/blog">Blog</Link>
-      <Link to="/about">About</Link>
+      
     </Nav>
   </Headroom>
 );
