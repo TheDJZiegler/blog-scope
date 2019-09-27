@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+import * as theme from '../theme'
+
 const Wrapper = styled.footer`
   position: relative;
   padding-top: 2rem;
   bottom: 0;
-  box-shadow: ${props => props.theme.shadow.footer};
-  background: ${props => props.theme.gradient.leftToRight};
-  font-family: ${props => props.theme.fontFamily.body};
+  height: 250px;
+  background-color: ${theme.DARKER_BLUE};
   font-weight: 500;
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     padding-top: 7rem;

@@ -3,6 +3,9 @@ import styled from '@emotion/styled';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
+import {Logo} from '../../public/icons/logotipo.svg'
+import * as theme from '../theme'
+
 const Wrapper = styled.header`
   -webkit-clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
   clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
@@ -10,7 +13,7 @@ const Wrapper = styled.header`
     -webkit-clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
     clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
   }
-  background: ${props => props.theme.gradient.rightToLeft};
+  background-color: ${theme.DARKER_BLUE};
   height: 300px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 300px;
@@ -46,12 +49,11 @@ const Subtitle = styled.p`
 
 const Header = ({ children, title, date, cover }) => (
   <Wrapper>
-    <Img fluid={cover || {} || [] || ''} />
+    <Img src={Logo} fluid={cover || {} || [] || ''} />
     <Text>
-      <h1>{title}</h1>
-      <h3>{date}</h3>
+      <h1>Scope Blog</h1>
 
-      {children && <Subtitle>{children}</Subtitle>}
+      {children && <Subtitle>All your <span style={{color: theme.BRAND_BLUE}}>team</span> <span style={{color: theme.RED}}>insights</span> in a single dashboard</Subtitle>}
     </Text>
   </Wrapper>
 );

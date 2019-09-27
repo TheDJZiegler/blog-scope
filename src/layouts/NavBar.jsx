@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
 import logo from '../../static/logo/header-logo.png';
 
+import Logo from '../../public/icons/logotipo_blanco.svg'
+
 const StyledLink = styled(Link)`
   display: flex;
   font-weight: 700;
@@ -30,7 +32,7 @@ const Nav = styled.nav`
 const NavBar = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
-      <img src={logo} alt="Gatsby Logo" />
+      <img src={Logo} width='120' alt="Scope Logo" />
     </StyledLink>
     <Nav>
       <Link to="/">Home</Link>
