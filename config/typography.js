@@ -1,7 +1,7 @@
 import Typography from 'typography';
 
 export const typography = new Typography({
-  title: 'GatsbyTutorial',
+  title: 'Scope Blog',
   baseFontSize: '18px',
   baseLineHeight: 1.45,
   headerFontFamily: [
