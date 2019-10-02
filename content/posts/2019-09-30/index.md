@@ -1,5 +1,5 @@
 ---
-path: "/the-importante-of-using-good-coding-practices"
+path: "blog/the-importance-of-using-good-coding-practices"
 cover: "./main.png"
 date: "2019-09-30"
 title: "The Importance of Using Good Coding Practices"

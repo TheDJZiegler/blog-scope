@@ -1,5 +1,5 @@
 ---
-path: "/measure-developer-productivity"
+path: "/blog/measure-developer-productivity"
 cover: "./anatomypr.png"
 date: "2019-09-29"
 title: "Measuring Developer Productivity"
