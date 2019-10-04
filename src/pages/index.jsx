@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import { Header, PostList } from 'components';
 import { Layout } from 'layouts';
+import favicon from '../styles/isotipo_azul.png'
 
 const PostWrapper = styled.div`
   display: flex;
@@ -24,8 +25,9 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Home Page'} />
-      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'Blog - Scope'} 
+      link={[{rel: 'icon', type: 'image/png', sizes: '32x32', href: `${favicon}`}]}/>
+      <Header title="Home Page">Scope Blog</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

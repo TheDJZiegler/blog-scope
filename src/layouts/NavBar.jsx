@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
 
+import Logo from '../../public/icons/logotipo_blanco.svg';
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -30,10 +31,9 @@ const Nav = styled.nav`
 const NavBar = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
+      <img src={Logo} width="120" alt="Scope Logo" />
     </StyledLink>
-    <Nav>
-      
-    </Nav>
+    <Nav></Nav>
   </Headroom>
 );
 
