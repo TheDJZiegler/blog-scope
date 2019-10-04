@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
-
 import {Logo} from '../../public/icons/logotipo.svg'
+
 import * as theme from '../theme'
 
 const Wrapper = styled.header`
@@ -52,7 +52,7 @@ const Header = ({ children, title, date, cover }) => (
     <Img src={Logo} fluid={cover || {} || [] || ''} />
     <Text>
       <h1>Scope Blog</h1>
-      <h3>{date}</h3>
+      <h3 style={{fontSize: 12}}>{date}</h3>
       {children && <Subtitle>All your <span style={{color: theme.BRAND_BLUE}}>team</span> <span style={{color: theme.RED}}>insights</span> in a single dashboard</Subtitle>}
     </Text>
   </Wrapper>
