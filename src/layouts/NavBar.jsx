@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
 
-import Logo from '../../public/icons/logotipo_blanco.svg';
+import Logo from '../../static/logo/logotipo_blanco.svg';
 
 const StyledLink = styled(Link)`
   display: flex;
