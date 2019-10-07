@@ -8,7 +8,8 @@ import Logo from '../../public/icons/logotipo_blanco.svg';
 const StyledLink = styled(Link)`
   display: flex;
   font-weight: 700;
-  align-items: center;
+  margin-top: 10px;
+  margin-bottom: -15px;
 `;
 
 const Nav = styled.nav`
