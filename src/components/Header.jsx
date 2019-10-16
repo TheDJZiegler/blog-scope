@@ -4,12 +4,11 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import {Logo} from '../../static/logo/logotipo.svg'
 
-import * as theme from '../theme'
 
 const Wrapper = styled.header`
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  background-color: ${theme.DARKER_BLUE};
+  background-color: ${props => props.theme.colors.dark.base};
   height: 300px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 300px;
@@ -40,14 +39,14 @@ const Text = styled.div`
 
 const Subtitle = styled.p`
   max-width: 650px;
-  color: ${props => props.theme.colors.white.light};
+  color: ${props => props.theme.colors.white.base};
 `;
 
 const Header = ({ children, title, date, cover }) => (
   <Wrapper>
     <Img src={Logo} fluid={cover || {} || [] || ''} />
     <Text>
-      <h1>All your <span style={{color: theme.BRAND_BLUE}}>team</span> <span style={{color: theme.RED}}>insights</span> in a single dashboard</h1>
+      <h1>All your <span style={{color: props => props.theme.colors.blue.base}}>team</span> <span style={{color: props => props.theme.colors.red.base}}>insights</span> in a single dashboard</h1>
       <h3 style={{fontSize: 12}}>{date}</h3>
     </Text>
   </Wrapper>

@@ -6,13 +6,12 @@ import { Layout, Container, Content } from 'layouts';
 import { TagsBlock, Header, SEO } from 'components';
 import '../styles/prism';
 
-import * as theme from '../theme'
 
 const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
+  background: ${props => props.theme.colors.white.base};
 `;
 
 const PostSuggestion = styled.div`
@@ -45,16 +44,16 @@ const Post = ({ data, pageContext }) => {
         <PostSuggestion>
           {prev && (
             <Link to={prev.frontmatter.path}>
-              <span style={{fontWeight: 'bold', color: theme.DARKER_BLUE}}>Previous</span>
-              <h3 style={{color: theme.BRAND_BLUE}}>{prev.frontmatter.title}</h3>
+              <span style={{fontWeight: 'bold', color: props => props.theme.colors.dark.base}}>Previous</span>
+              <h3 style={{color: props => props.theme.colors.blue.base}}>{prev.frontmatter.title}</h3>
             </Link>
           )}
         </PostSuggestion>
         <PostSuggestion>
           {next && (
             <Link to={next.frontmatter.path}>
-              <span style={{fontWeight: 'bold', color: theme.DARKER_BLUE}}>Next</span>
-              <h3 style={{color: theme.BRAND_BLUE}}>{next.frontmatter.title}</h3>
+              <span style={{fontWeight: 'bold', color: props => props.theme.colors.dark.base}}>Next</span>
+              <h3 style={{color: props => props.theme.colors.blue.base}}>{next.frontmatter.title}</h3>
             </Link>
           )}
         </PostSuggestion>

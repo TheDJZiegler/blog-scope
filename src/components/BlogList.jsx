@@ -39,7 +39,7 @@ const Image = styled.div`
     }
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 5px ${props => props.theme.colors.primary.dark};
+      box-shadow: 0 0 0 5px ${props => props.theme.colors.blue.dark};
     }
   }
   flex-basis: 100%;
@@ -63,7 +63,7 @@ const Information = styled.div`
     color: ${props => props.theme.colors.black.base};
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
-      color: ${props => props.theme.colors.primary.base};
+      color: ${props => props.theme.colors.blue.base};
     }
   }
   text-align: center;

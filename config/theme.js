@@ -1,22 +1,41 @@
 export const colors = {
   white: {
     base: '#fff',
-    light: '#f0f0f0',
-    grey: '#cecece',
-    dark: '#a0afd7',
   },
   black: {
     base: '#333438',
     light: '#4b4e57',
     blue: '#2e3246',
   },
-  primary: {
+  blue: {
     base: '#76d1f8',
-    light: '#afe6f9',
-    dark: '#284187',
+    base_75: '#85dcf8',
+    base_50: '#afe6f9',
+    base_25: '#d6f3fc',
   },
   green: {
     base: '#39e5a7',
+    base_75: '#40e9bf',
+    base_50: '#7fefd3',
+    base_25: '#bFF7e9',
+  },
+  yellow: {
+    base: '#ffd48a',
+    base_75: '#ffe1ad',
+    base_50: '#ffeac8',
+    base_25: '#fff5e3',
+  },
+  orange: {
+    base: '#f78557',
+    base_75: '#ffab88',
+    base_50: '#ffc5af',
+    base_25: '#ffe2d7',
+  },
+  red: {
+    base: '#fa547a',
+    base_75: '#ff94aa',
+    base_50: '#FFb7c6',
+    base_25: '#FFdbe2',
   },
   background: {
     light: '#3e5fbc',
@@ -24,6 +43,9 @@ export const colors = {
   },
   dark: {
     base: '#0d0d38',
+    base_75: '#434467',
+    base_50: '#818299',
+    base_25: '#c0c0cc',
   },
 };
 

@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import * as theme from '../theme'
 
 const TagsContainer = styled.div`
   margin: 1rem 0;
@@ -14,14 +13,14 @@ const TagsContainer = styled.div`
   align-items: center;
   a {
     margin: 0 1rem 1rem 0;
-    color: ${theme.DARKER_BLUE};
+    color: ${props => props.theme.colors.dark.base};
     padding: 0.3rem 0.6rem;
-    background: ${theme.BRAND_BLUE_50};
+    background: ${props => props.theme.colors.blue.base_50};
     border-radius: 10px;
     &:hover {
-      color: ${theme.WHITE};
-      background: ${theme.BRAND_BLUE};
-      border: ${props => props.theme.colors.primary.light};
+      color: ${props => props.theme.colors.white.base};
+      background: ${props => props.theme.colors.blue.base};
+      border: ${props => props.theme.colors.blue.light};
     }
   }
 `;
