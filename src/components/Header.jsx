@@ -7,12 +7,8 @@ import {Logo} from '../../static/logo/logotipo.svg'
 import * as theme from '../theme'
 
 const Wrapper = styled.header`
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
-  clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
-    clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
-  }
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   background-color: ${theme.DARKER_BLUE};
   height: 300px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
