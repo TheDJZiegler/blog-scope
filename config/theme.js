@@ -15,9 +15,15 @@ export const colors = {
     light: '#afe6f9',
     dark: '#284187',
   },
+  green: {
+    base: '#39e5a7',
+  },
   background: {
     light: '#3e5fbc',
     dark: '#284187',
+  },
+  dark: {
+    base: '#0d0d38',
   },
 };
 

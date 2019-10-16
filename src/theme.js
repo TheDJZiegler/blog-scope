@@ -9,7 +9,7 @@ export const BRAND_BLUE_25 = '#d6f3fc'
 export const GREEN = '#39e5a7'
 export const GREEN_75 = '#40e9bf'
 export const GREEN_50 = '#7fefd3'
-export const GREEN_25 = '#bﬀ7e9'
+export const GREEN_25 = '#bFF7e9'
 
 export const YELLOW = '#ffd48a'
 export const YELLOW_75 = '#ffe1ad'
