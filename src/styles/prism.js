@@ -38,7 +38,7 @@ const prism = css`
     overflow: auto;
     border-radius: 0.3em;
     &::-webkit-scrollbar-thumb {
-      background: ${theme.colors.primary.base};
+      background: ${theme.colors.blue.base};
     }
     &::-webkit-scrollbar-track {
       background: ${theme.colors.black.light};

@@ -26,13 +26,13 @@ const Nav = styled.nav`
     margin-right: 2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
-      color: ${props => props.theme.colors.primary.base};
+      color: ${props => props.theme.colors.blue.base};
       cursor: pointer;
     }
   }
 `;
 
-const GetStarted = styled.button`
+export const GetStarted = styled.button`
   border: none;
   background-color: ${props => props.theme.colors.green.base};
   width: 150px;
@@ -60,8 +60,8 @@ const NavBar = () => (
       <img src={Logo} width="120" alt="Scope Logo" />
     </StyledLink>
     <Nav>
-      <StyledLink>Product</StyledLink>
-      <StyledLink>Pricing</StyledLink>
+      <a href="https://scope.ink/product">Product</a>
+      <a href="https://scope.ink/product">Pricing</a>
       <GetStarted><span>Get Started</span></GetStarted>
     </Nav>
   </Headroom>

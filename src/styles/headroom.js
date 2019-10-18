@@ -44,11 +44,11 @@ const headroom = css`
       a {
         color: ${theme.colors.white.base};
         &:hover {
-          border-color: ${theme.colors.primary.base};
-          color: ${theme.colors.primary.base};
+          border-color: ${theme.colors.blue.base};
+          color: ${theme.colors.blue.base};
         }
         &:focus {
-          color: ${theme.colors.primary.base};
+          color: ${theme.colors.blue.base};
         }
       }
     }
