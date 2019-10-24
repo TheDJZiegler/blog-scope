@@ -14,7 +14,7 @@ GitLab is now on production on Scope.ink. However, the status of GitLab is Beta 
 
 `We are open to keep receiving feedback from you, so we can improve our software, insights and processes.`
 
->>> *If you don’t know how Scope actually works, you can read this publication on [Hackernoon](https://hackernoon.com/measure-a-developers-impact-e2e18593ac79) and check this [YouTube video](https://www.youtube.com/watch?v=BoJqyCcm-DU).*
+>>> *If you don’t know how Scope actually works, you can read [this publication](https://scope.ink/blog/measure-developer-productivity) and check this [YouTube video](https://www.youtube.com/watch?v=BoJqyCcm-DU).*
 
 ## How to install GitLab on Scope.ink
 
