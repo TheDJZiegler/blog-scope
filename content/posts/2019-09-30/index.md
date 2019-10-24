@@ -6,9 +6,9 @@ title: "The Importance of Using Good Coding Practices"
 published: true
 tags: ['coding', 'practices', 'developer']
 ---
-#The importante of using good coding practices
+#The importance of using good coding practices
 
-Incode development, as in any other kind of job, it’s very important to organize work, structure efforts and prioritize tasks with the only purpose of having better results.
+In code development, as in any other kind of job, it’s very important to organize work, structure efforts and prioritize tasks with the only purpose of having better results.
 
 Although it’s true that there are several different established practices for a set of programming languages, they are not universalized among programmers and engineers to establish a series of guidelines and make processes follow a logical structure — as for the artisanal process itself.
 
